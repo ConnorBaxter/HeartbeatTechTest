@@ -6,12 +6,13 @@
 
     public class MessageSender : IMessageSender
     {
-        private readonly HttpClient Client = new();
-
+        private readonly HttpClient client = new();
+        
         private readonly ILogger<MessageSender> logger;
         private readonly HeartbeatServiceSettings settings;
 
-        public MessageSender(HeartbeatServiceSettings settings, ILogger<MessageSender> logger)
+        public MessageSender(HeartbeatServiceSettings settings, 
+            ILogger<MessageSender> logger)
         {
             this.settings = settings;
             this.logger = logger;
@@ -23,7 +24,7 @@
 
             try
             {
-                var response = await this.Client.PostAsJsonAsync(endpoint, statusResource);
+                var response = await this.client.PostAsJsonAsync(endpoint, statusResource);
                 return response.IsSuccessStatusCode;
             }
             catch (Exception e)

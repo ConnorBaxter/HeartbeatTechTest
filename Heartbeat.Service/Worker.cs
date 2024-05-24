@@ -1,15 +1,17 @@
 namespace Heartbeat.Service
 {
+    using System.Diagnostics.CodeAnalysis;
     using Heartbeat.Lib;
     using Heartbeat.Service.Configuration;
     using Heartbeat.Service.MessageSenders;
 
+    [ExcludeFromCodeCoverage]
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> logger;
         private readonly HeartbeatServiceSettings settings;
         private readonly IMessageSender messageSender;
-
+        
         public Worker(ILogger<Worker> logger, 
             HeartbeatServiceSettings settings,
             IMessageSender messageSender)
