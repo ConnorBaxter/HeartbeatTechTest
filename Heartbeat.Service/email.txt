@@ -1,0 +1,41 @@
+﻿Objective: Create a "heartbeat" Windows Service and a RESTful API. The service will ping the API every minute, sending a UUID and a timestamp. The API will print these details to the console.
+
+Requirements:
+
+    Use .NET 8.
+    Implement the Windows Service as a Background Service.
+    The Windows Service should send a UUID and a timestamp to the API every minute.
+    The API should print the received UUID and timestamp to the console.
+    Ensure the code runs locally and can be tested without installation.
+
+References:
+
+    [Windows Service as a Background Service] ( https://learn.microsoft.com/en-us/dotnet/core/extensions/windows-service  )
+
+Instructions:
+
+    Create a new .NET 8 Worker Service project for the Windows Service.
+    Create a new .NET 8 ASP.NET Core Web API project for the RESTful API.
+    Implement the required functionality in both projects.
+    Ensure both the service and the API can run locally.
+    Submit the code in a single zip file or provide a link to a GitHub repository.
+
+Part 1: Windows Service (Heartbeat Service)
+
+    Create the Worker Service project:
+        Use the .NET CLI or Visual Studio to create a new Worker Service project (see references).
+    Implement the Worker class to send heartbeat requests:
+        Send a POST requests to the API endpoint every minute with a UUID and timestamp in the request body.
+
+Part 2: RESTful API
+
+    Create the ASP.NET Core Web API project:
+        Use the .NET CLI or Visual Studio to create a new ASP.NET Core Web API project.
+    Implement the API to receive and log the heartbeat requests:
+        Define a POST endpoint that accepts the UUID and timestamp.
+        Print the received data to the console.
+
+Submission
+
+    Zip your project folders or provide a link to a GitHub repository containing your solutions.
+    Ensure your code is clean, well-documented, and follows good coding practices.
