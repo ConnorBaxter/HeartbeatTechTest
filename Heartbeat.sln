@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heartbeat.Lib", "Heartbeat.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heartbeat.Api", "Heartbeat.Api\Heartbeat.Api.csproj", "{0EE805D8-52F0-41CE-89BC-AB6B5ECC2C64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heartbeat.Api.Tests", "Heartbeat.Api.Tests\Heartbeat.Api.Tests.csproj", "{A78BA79D-7C99-45EF-9F9B-DF32E2D5A062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heartbeat.Service.Tests", "Heartbeat.Service.Tests\Heartbeat.Service.Tests.csproj", "{A0979FA6-DE51-44BB-9CA6-9CAFF4C07F0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{0EE805D8-52F0-41CE-89BC-AB6B5ECC2C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EE805D8-52F0-41CE-89BC-AB6B5ECC2C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EE805D8-52F0-41CE-89BC-AB6B5ECC2C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78BA79D-7C99-45EF-9F9B-DF32E2D5A062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78BA79D-7C99-45EF-9F9B-DF32E2D5A062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78BA79D-7C99-45EF-9F9B-DF32E2D5A062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78BA79D-7C99-45EF-9F9B-DF32E2D5A062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0979FA6-DE51-44BB-9CA6-9CAFF4C07F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0979FA6-DE51-44BB-9CA6-9CAFF4C07F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0979FA6-DE51-44BB-9CA6-9CAFF4C07F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0979FA6-DE51-44BB-9CA6-9CAFF4C07F0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

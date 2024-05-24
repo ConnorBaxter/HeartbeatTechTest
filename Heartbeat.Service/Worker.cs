@@ -23,7 +23,7 @@ namespace Heartbeat.Service
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                this.logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                this.logger.LogInformation($"Worker running at: {DateTime.Now.ToUniversalTime():O}");
 
                 var success = await this.messageSender.Send(new StatusResource()
                 {
